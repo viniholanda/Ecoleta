@@ -1,0 +1,138 @@
+
+#page-home {
+
+    height: 100vh;
+
+    background-position: 35vw bottom;
+
+    /*no-repet para não repetir a imagem do background*/
+    background: url('../Assets/home-background.svg') no-repeat;
+
+
+}
+
+
+#page-home .content {
+
+    height: 90%;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#page-home header {
+
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#page-home header a {
+
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+
+}
+
+#page-home header span {
+    margin-right: 16px;
+    display: flex;
+    background-image: url(../Assets/log-in.svg);
+    width: 20px;
+    height: 20px;
+
+}
+
+#page-home main {
+
+    max-width: 560px;
+
+    flex: 1;       
+    
+    /*inicio para alteração de eixo*/
+    display: flex;
+    
+    /*alteração de eixo horizontal para veretical*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1 {
+font-size: 54px;
+}
+
+#page-home main a {
+
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+
+    /*largura do botão*/
+    border-radius: 8px ;
+
+    /*display e align para centralizar conteudo do botão*/
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    background: var(--primary-color);
+   
+
+    /*suaviza o passar do mause no botão*/
+    transition: 400ms;
+
+    font-weight: bold;
+    color: white
+
+}
+
+/*troca de cor quando passa o mause*/
+#page-home main a:hover {
+    background-color: #2fb86e;
+}
+
+
+
+#page-home main a span{
+
+    /*insere quadrado ao lado do texto do botão*/
+    width: 72px;
+    height: 72px;
+   
+
+    /* retira a ponta que ficou no quadrado dentro do botão*/
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    /*deixa a cor diferente do quadrado dentro do botão*/
+    background-color: rgba(0, 0, 0, 0.08);
+
+    /*centraliza imagem pesquisa*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/*inserido imagem de pesquisa*/
+#page-home main a span::after {
+    content: "";
+    background-image: url('../Assets/search.svg');
+    width: 20px;
+    height: 20px;
+}
+
+/*criação da tag strong e centraliza texto do botão*/
+#page-home main a strong{
+    flex: 1;
+    text-align: center;
+}
+

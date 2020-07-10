@@ -1,0 +1,54 @@
+
+/* criação de atalho para cor padrão */
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+
+/* Atalho para todos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+/*fonte google fonts*/
+html {
+    font-family: Roboto, sans-serif;
+
+}
+
+
+body {
+    background-color: #f0f0f5;
+}
+
+
+/* retira sublinhado do link */
+a {
+    text-decoration: none;
+}
+
+
+/*padronizando os titulos*/
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+    
+    }
+
+p {
+
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+
+}    
+
+
+
+   
+    
